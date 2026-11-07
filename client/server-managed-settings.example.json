@@ -1,0 +1,12 @@
+{
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "OTEL_LOGS_EXPORTER": "otlp",
+    "OTEL_METRICS_EXPORTER": "otlp",
+    "OTEL_EXPORTER_OTLP_PROTOCOL": "http/protobuf",
+    "OTEL_EXPORTER_OTLP_LOGS_ENDPOINT": "https://logs.<region>.amazonaws.com/v1/logs",
+    "OTEL_EXPORTER_OTLP_LOGS_HEADERS": "Authorization=Bearer <LOGS_API_KEY>,x-aws-log-group=/claude-code/events,x-aws-log-stream=default",
+    "OTEL_EXPORTER_OTLP_METRICS_ENDPOINT": "https://monitoring.<region>.amazonaws.com/v1/metrics",
+    "OTEL_EXPORTER_OTLP_METRICS_HEADERS": "Authorization=Bearer <METRICS_API_KEY>"
+  }
+}
